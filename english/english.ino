@@ -64,15 +64,7 @@ void setup() {
 }
 
 void loop() {
-  /* This text commented as the ones on lines 138 - 160 are not working, I will work on a solution when I have time.
-    byte buffer;
   
-    Wire.beginTransmission(0x68);
-    Wire.write(0x11);
-    Wire.endTransmission();
-    Wire.requestFrom(0x68, 2); 
-    buffer = Wire.read();
-*/
     DateTime now = RTC.now();
     DateTime aniversary = (1573413540); //It is set in unixtime to be able to do the operations
     
@@ -88,10 +80,6 @@ void loop() {
     String nightext = "Descansa enana";
     String daytext = "BUENOS DIAS";
 
-/* I used it at the time to know if it was 24h format or 12h format (it is 24h format)
-    lcd.print(hourcounter);
-    delay(1000);
-*/
     texto();
 
     if(hourcounter >= 1 && hourcounter <= 7){
@@ -137,29 +125,6 @@ void loop() {
         delay(300000);
         lcd.clear();
     }
-/* It does not work
-    if(hourcounter >= 17 && hourcounter <= 19){
-        if (buffer >= 0 && buffer <= 15){
-            delay(10000);
-            lcd.clear();
-            lcd.setCursor(3,0);
-            lcd.print("Hace frio");
-            lcd.setCursor(3,1);
-            lcd.print("abrigate");
-            delay(5000);
-        }
-        if (buffer >= 30 && buffer <= 50){
-            delay(10000);
-            lcd.clear();
-            lcd.setCursor(3,0);
-            lcd.print("Hace calor");
-            lcd.setCursor(3,1);
-            lcd.print("hidratate");
-            delay(5000);
-        }
-    }
-*/
-  
 }
 
 void print (String stringprint) { // Read the strings and print them
