@@ -63,15 +63,7 @@ void setup() {
 }
 
 void loop() {
-  /* Actualmente este texto comentado como el de la linea 138 - 160 no está funcionando, trabajaré en una solución cuando tenga tiempo.
-    byte buffer;
   
-    Wire.beginTransmission(0x68);
-    Wire.write(0x11);
-    Wire.endTransmission();
-    Wire.requestFrom(0x68, 2); 
-    buffer = Wire.read();
-*/
     DateTime ahora = RTC.now();
     DateTime elmejordia = (1573413540); //Esta puesto en unixtime para poder hacer las operaciones 
     
@@ -135,31 +127,7 @@ void loop() {
         lcd.write(1);
         delay(300000);
         lcd.clear();
-    }
-/* no funciona
-    if(contadorhora >= 17 && contadorhora <= 19){
-        if (buffer >= 0 && buffer <= 15){
-            delay(10000);
-            lcd.clear();
-            lcd.setCursor(3,0);
-            lcd.print("Hace frio");
-            lcd.setCursor(3,1);
-            lcd.print("abrigate");
-            delay(5000);
-        }
-
-        if (buffer >= 30 && buffer <= 50){
-            delay(10000);
-            lcd.clear();
-            lcd.setCursor(3,0);
-            lcd.print("Hace calor");
-            lcd.setCursor(3,1);
-            lcd.print("hidratate");
-            delay(5000);
-        }
-    }
-*/
-  
+    }  
 }
 
 void imprimir (String stringimp) { //Lee los strings y los imprime
