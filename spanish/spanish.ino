@@ -78,11 +78,7 @@ void loop() {
     String ano = String(contadoranos) + " " + "A";
     String textonoche = "Descansa enana";
     String textodia = "BUENOS DIAS";
-
-/* lo use en su momento para saber si era formato 24h o formato 12h (es formato 24h)
-    lcd.print(contadorhora);
-    delay(1000);
-*/
+  
     texto();
 
     if(contadorhora >= 1 && contadorhora <= 7){
