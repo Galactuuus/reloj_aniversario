@@ -157,7 +157,7 @@ void texto(){
     else 
         array_monthdays[1] = 28;
     
-    int monthdaycounter = array_monthdays[now2.month()] - aniversary2.day() + now2.day();
+    int monthdaycounter = array_monthdays[now2.month() - 2] - aniversary2.day() + now2.day();
     int monthcounter = (now2.year() - aniversary2.year()) * 12 + (now2.month() - aniversary2.month() - 1);
 
     if (now2.day() >= aniversary2.day()) {
