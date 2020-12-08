@@ -82,7 +82,7 @@ void loop() {
 
     texto();
 
-    if(hourcounter >= 1 && hourcounter <= 7){
+    if(hourcounter >= 24 && hourcounter < 7){
         lcd.noBacklight(); // The light will not disturb at night
        
     }
