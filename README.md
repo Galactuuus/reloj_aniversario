@@ -46,4 +46,4 @@ Todas las piezas han sido compradas en Amazon, si necesitas los enlaces te lo pu
 
 El código está adaptado con personalizaciones para mi novia, cosas que uso a diario. Si quieres hacer el mismo regalo pero no sabes cómo personalizarlo y necesitas ayuda, no dudes en contactarme en galactuuus@gmail.com
 
-Hablo español, las variables y los textos personalizados se adaptarán al inglés. De esta forma, cualquiera puede entender el código.
+Hablo español, las variables y los textos personalizados se adaptarán al inglés. De esta forma, cualquiera puede entender el código. :D
