@@ -156,8 +156,8 @@ void texto(){
     else 
         array_diasmeses[1] = 28;
     
-    int contadordiames = array_diasmeses[ahora2.month() - 2] - elmejordia2.day() + ahora2.day();
-    int contadormes = (ahora2.year() - elmejordia2.year()) * 12 + (ahora2.month() - elmejordia2.month() - 1);
+    int long contadordiames = array_diasmeses[ahora2.month() - 2] - elmejordia2.day() + ahora2.day();
+    int long contadormes = (ahora2.year() - elmejordia2.year()) * 12 + (ahora2.month() - elmejordia2.month() - 1);
 
     if (ahora2.day() >= elmejordia2.day()) {
         contadormes += 1;
